@@ -1,0 +1,13 @@
+1.Ağ Bağlantıları Penceresini Açın: 
+Windows arama çubuğuna "Ağ bağlantılarını görüntüle" yazın (veya klavyeden Windows + R tuşlarına basıp ncpa.cpl yazarak Enter'a basın). Karşınıza çıkan listede Ethernet kablonuzun takılı olduğu Ethernet adaptörünü bulun.
+
+2.IPv4 Özelliklerine Girin:
+TCP/IPv4 Ayarları.Ethernet adaptörünün üzerine sağ tıklayıp Özellikler'i seçin. Açılan listeden "İnternet Protokolü Sürüm 4 (TCP/IPv4)" seçeneğini bulun ve üzerine çift tıklayın.
+
+3.Statik IP Adresini Tanımlayın:
+Manuel IP Yapılandırması."Aşağıdaki IP adresini kullan" seçeneğini işaretleyin ve şu değerleri girin:IP adresi: 192.168.1.10Alt ağ maskesi (Subnet Mask): 255.255.255.0Varsayılan ağ geçidi: (Boş bırakabilirsiniz). Tamam ve ardından tekrar Tamam butonlarına basarak pencereleri kapatın. 
+
+Verification: Adaptör penceresinde bağlantının "Ağ Kablosu Takılı" ve etkin durumdayken IP adresinin tanımlandığını kontrol edin.
+
+4.Arduino Tarafını Ayarlayın ve Test Edin:
+Ping Kontrolü. Arduino kodunuzda IP adresini aynı ağ grubundan farklı bir numara olacak şekilde (örneğin 192.168.1.50) tanımlayın ve Arduino'yu karta yükleyin. Komut İstemi'ni (cmd) açıp şu komutu yazın:ping 192.168.1.50

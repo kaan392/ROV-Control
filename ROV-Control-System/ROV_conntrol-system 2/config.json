@@ -1,0 +1,58 @@
+{
+    "network": {
+        "target_ip": "192.168.1.50",
+        "target_port": 5032,
+        "local_port": null,
+        "use_simulation": false
+    },
+    "joystick": {
+        "deadzone": 0.08,
+        "sensitivity": 1.0,
+        "axis_mapping": {
+            "forward": 1,
+            "strafe": 0,
+            "vertical": 3,
+            "yaw": 2
+        },
+        "calibration": {
+            "forward": {
+                "axis": 1,
+                "label": "Y",
+                "center": 0.00390625,
+                "min": -1.0,
+                "max": 0.999969482421875
+            },
+            "vertical": {
+                "axis": 3,
+                "label": "RY",
+                "center": 0.00390625,
+                "min": -1.0,
+                "max": 0.999969482421875
+            },
+            "strafe": {
+                "axis": 0,
+                "label": "X",
+                "center": 0.00390625,
+                "min": -1.0,
+                "max": 0.999969482421875
+            },
+            "yaw": {
+                "axis": 2,
+                "label": "RX",
+                "center": 0.00390625,
+                "min": -1.0,
+                "max": 0.999969482421875
+            }
+        }
+    },
+    "motors": {
+        "reverse": {
+            "M1": false,
+            "M2": false,
+            "M3": true,
+            "M4": true,
+            "M5": false,
+            "M6": false
+        }
+    }
+}
